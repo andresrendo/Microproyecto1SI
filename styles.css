@@ -152,7 +152,7 @@
 }
 
 /* edicion del main */
-.main{
+/* .main{
     background-color: rgba(80, 3, 3, 0.87);
 }
 .main__container{
@@ -167,7 +167,7 @@
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
-}
+} */
 
 
 /* Experiencia */
@@ -264,6 +264,113 @@
 }
 
 
+/* aqui comenzamos con el carrusel */
+.container{
+    width: 90%;
+    min-height: 50vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hero{
+    background: linear-gradient(rgb(46, 19, 19),rgb(77, 3, 3));
+    padding: 40px 0px;
+}
+.hero__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background: linear-gradient(rgb(46, 19, 19),rgb(77, 3, 3));
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider__body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider__texts{
+    max-width: 600px;
+}
+.subtittle{
+    padding-left: 50px;
+    font-size: 3.5rem;
+    color: orangered;
+    /* margin-bottom: 20px; */
+}
+
+.slider__img{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider__arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+@media(max-width:768px){
+    .slider__body{
+        grid-template-columns: 1fr ;
+        grid-template-rows: max-content 1fr;
+        gap: 1em;
+    }
+    .slider__arrow{
+        width: 100%;
+    }
+    .subtittle{
+        font-size: 2rem;
+    }
+    .slider__picture{
+        grid-row: 1/2;
+    }
+    .slider__img{
+        width: 310px;
+        height: 310px;
+    }
+}
+@media(max-width:425px){
+    /* .slider__body{
+        grid-template-columns: 1fr ;
+        grid-template-rows: max-content 1fr;
+     */
+    .hero__container{
+        grid-template-columns: 25px 1fr 25px;
+    }
+    .slider__picture{
+        grid-row: 1/2;
+    }
+    .slider__arrow{
+        width: 100%;
+    }
+    .slider__img{
+        width: 210px;
+        height: 210px;
+    }
+    .subtittle{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
 
 
 
