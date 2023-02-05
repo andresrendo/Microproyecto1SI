@@ -27,7 +27,9 @@
     margin: 0 auto;
     padding: 0 50px;
 }
-
+#icono{
+    padding-right: 500px;
+}
 #navbar__logo{
     background-color: brown;
     background-image: linear-gradient(to top,red 0%, yellow 100%);
@@ -107,9 +109,12 @@
         height: 50vh;
         font-size: 1.6rem;
     }
+    #icono{
+        padding-right: 900px;
+    }
 
     #navbar__logo{
-        padding-left: 25px;
+        padding-left: 10px;
     }
 
     .navbar__toggle .bar{
@@ -432,11 +437,57 @@
     }
 }
 
+/* Aqui inicia la seccion de skills */
+.barras{
+    background: linear-gradient(rgb(46, 19, 19),rgb(77, 3, 3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.barras h1{
+    display: flex;
+    align-items: center;
+    color: orangered;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.barra__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+.circular__progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: yellow;
+    border-radius: 50%;
+    background: conic-gradient(orangered 295deg, rgb(172, 167, 167) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular__progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.progress__value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: orangered;
+}
 
 
 /* Aqui inicia el Contact Me */
 .footer__container{
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     background-color: rgb(90, 15, 15);
     padding: 2rem;

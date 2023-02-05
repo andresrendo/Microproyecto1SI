@@ -49,3 +49,5 @@ menu.addEventListener("click", function(){
 //     input.addEventListener("focus", focusFunc);
 //     input.addEventListener("blur", blurFunc);
 // ))
+
+//Aqui estara el js del Porgress Bar
