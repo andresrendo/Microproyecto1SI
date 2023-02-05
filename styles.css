@@ -334,7 +334,7 @@
     justify-self: end;
 }
 
-@media(max-width:768px){
+@media(max-width:1000px){
     .slider__body{
         grid-template-columns: 1fr ;
         grid-template-rows: max-content 1fr;
@@ -352,6 +352,15 @@
     .slider__img{
         width: 310px;
         height: 310px;
+    }
+    .slider__texts{
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media(max-width:425px){
