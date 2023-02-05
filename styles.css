@@ -239,6 +239,7 @@
 
 .experiencia__carta p{
     position: absolute;
+    margin: 10px 0px 10px 0px;
     top: 400px;
     left: 30px;
 }
