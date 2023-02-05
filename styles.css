@@ -23,13 +23,16 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin: 0 auto;
     padding: 0 50px;
 }
-#icono{
-    padding-right: 500px;
-}
+
+.right_side_container {
+    display: flex;
+    width: auto;
+} 
+
 #navbar__logo{
     background-color: brown;
     background-image: linear-gradient(to top,red 0%, yellow 100%);
@@ -109,9 +112,7 @@
         height: 50vh;
         font-size: 1.6rem;
     }
-    #icono{
-        padding-right: 900px;
-    }
+
 
     #navbar__logo{
         padding-left: 10px;
@@ -189,7 +190,7 @@
     background-image: linear-gradient(to right, rgb(126, 18, 18)0%, rgb(197, 88, 16)78%
     );
     background-size:  100%;
-    margin: 1rem;
+    /* margin: 1rem; */
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -205,7 +206,7 @@
 }
 
 .experiencia__carta{
-    margin: 1rem;
+    /* margin: 1rem; */
     height: 490px;
     width: 400px;
     border-radius: 4px;
@@ -407,6 +408,10 @@
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
+    /* display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);   */
 }
 .text{
     font-size: 13px;
@@ -422,10 +427,20 @@
     font-size: 15px;
     text-align: center;
 }
+.objetivos span{
+    position: relative;
+    margin: 10px;
+    text-align: center;
+}
 
 @media screen and (max-width:1200px){
     .inner__container{
         padding: 80px;
+    }
+    .objetivos span{
+        position: relative;
+        margin: 10px;
+        font-size: 10px;
     }
 }
 @media screen and (max-width:1000px){
@@ -436,6 +451,11 @@
     .inner__container{
         padding: 80px;
     }
+    .objetivos span{
+        position: relative;
+        margin: 10px;
+        font-size: 10px;
+    }
 }
 @media screen and (max-width:600px){
     .aboutMe{
@@ -443,6 +463,14 @@
     }
     .inner__container{
         padding: 60px;
+        
+    }
+    .objetivos{
+        text-align: justify;
+        display: grid;  
+        grid-gap: 1px;  
+        grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
+        grid-template-rows: repeat(3, 50px);
     }
 }
 
