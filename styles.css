@@ -151,3 +151,120 @@
 
 }
 
+/* edicion del main */
+.main{
+    background-color: rgba(80, 3, 3, 0.87);
+}
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: rgba(80, 3, 3, 0.87);
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+
+/* Experiencia */
+.experiencia{
+    background: linear-gradient(rgb(46, 19, 19),rgb(77, 3, 3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.experiencia h1{
+    background-color: brown;
+    background-image: linear-gradient(to right, rgb(126, 18, 18)0%, rgb(197, 88, 16)78%
+    );
+    background-size:  100%;
+    margin: 1rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.experiencia__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+.experiencia__carta{
+    margin: 1rem;
+    height: 490px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom,rgb(116, 6, 6) 0%, rgb(190, 106, 9)
+    78%),url("/images/virtual.png");
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.experiencia__carta:nth-child(2){
+    background-image: linear-gradient(to bottom,rgb(116, 6, 6) 0%, rgb(190, 106, 9)
+    78%),url("/images/anime.png");
+}
+.experiencia__carta:nth-child(3){
+    background-image: linear-gradient(to bottom,rgb(116, 6, 6) 0%, rgb(190, 106, 9)
+    78%),url("/images/Among.png");
+    
+}
+
+.experiencia h2{
+    padding: auto;
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.experiencia img{
+    padding-top: 70px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.experiencia__carta p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.experiencia__carta button{
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: firebrick;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.experiencia__carta:hover{
+    transform: scale(1.045);
+    transition: 0.2s ease-in;
+}
+
+
+
+
+
+
+
