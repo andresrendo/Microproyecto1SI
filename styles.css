@@ -224,7 +224,7 @@
 .experiencia h2{
     padding: auto;
     position: absolute;
-    top: 350px;
+    top: 310px;
     left: 30px;
 }
 
@@ -240,7 +240,8 @@
 .experiencia__carta p{
     position: absolute;
     margin: 10px 0px 10px 0px;
-    top: 400px;
+    /* padding-bottom: 300000px; */
+    top: 360px;
     left: 30px;
 }
 
@@ -252,8 +253,8 @@
     border-radius: 4px;
     background: firebrick;
     position: absolute;
-    top: 440px;
-    left: 30px;
+    top: 425px;
+    left: 25px;
     font-size: 1rem;
     cursor: pointer;
 }
