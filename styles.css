@@ -205,7 +205,7 @@
     width: 400px;
     border-radius: 4px;
     background-image: linear-gradient(to bottom,rgb(116, 6, 6) 0%, rgb(190, 106, 9)
-    78%),url("/images/virtual.png");
+    78%);
     object-fit: contain;
     background-size: cover;
     position: relative;
@@ -213,11 +213,11 @@
 }
 .experiencia__carta:nth-child(2){
     background-image: linear-gradient(to bottom,rgb(116, 6, 6) 0%, rgb(190, 106, 9)
-    78%),url("/images/anime.png");
+    78%);
 }
 .experiencia__carta:nth-child(3){
     background-image: linear-gradient(to bottom,rgb(116, 6, 6) 0%, rgb(190, 106, 9)
-    78%),url("/images/Among.png");
+    78%);
     
 }
 
@@ -372,7 +372,64 @@
     }
 }
 
+/* Aqui empieza el about me */
+.aboutMe{
+    background: url("images/yo2.jpg") no-repeat left;
+    background-size: 55%;
+    background-color: rgb(139, 71, 46);
+    overflow: hidden;
+    padding: 100px 0;
+}
 
+.inner__container{
+    width: 55%;
+    float: right;
+    background-color: rgb(185, 130, 110);
+    padding: 140px;
+}
+
+.inner__container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #000000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.objetivos{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px){
+    .inner__container{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .aboutMe{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner__container{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:600px){
+    .aboutMe{
+        padding: 0px;
+    }
+    .inner__container{
+        padding: 60px;
+    }
+}
 
 
 
