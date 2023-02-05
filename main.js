@@ -6,6 +6,8 @@ menu.addEventListener("click", function(){
     menuLinks.classList.toggle("active");
 });
 
+
+// aqui esta el js del hero
 (function(){
     const sliders = [...document.querySelectorAll(".slider__body")];
     const arrowNext = document.querySelector("#next");
@@ -29,3 +31,21 @@ menu.addEventListener("click", function(){
     }
 
 })()
+
+// aqui esatara el js del contact
+
+// const inputs = document.querySelectorAll(".input");
+// function focusFunc(){
+//     let parent = this.parentNode;
+//     parent.classList.add("focus");
+// }
+
+// function blurFunc(){
+//     let parent = this.parentNode;
+//     parent.classList.remove("focus");
+// }
+
+// inputs.forEach((input)) => (
+//     input.addEventListener("focus", focusFunc);
+//     input.addEventListener("blur", blurFunc);
+// ))
